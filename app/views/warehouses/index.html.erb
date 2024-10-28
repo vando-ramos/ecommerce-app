@@ -1,0 +1,26 @@
+<h2>Warehouses</h2>
+
+<% if @warehouses.any? %>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Code</th>
+        <th>City</th>
+        <th>Area</th>        
+      </tr>
+    </thead>
+    <tbody>
+      <% @warehouses.each do |warehouse| %>
+      <tr>
+        <td><%= link_to warehouse.name, warehouse_path(warehouse.id) %></td>
+        <td><%= warehouse.code %></td>
+        <td><%= warehouse.city %></td>
+        <td><%= warehouse.area %> m²</td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p class='no-data'>No warehouses found</p>
+<% end %>

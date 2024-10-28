@@ -1,0 +1,12 @@
+{
+  "id": 4,
+  "name": "Santos Dumont",
+  "code": "SDU",
+  "city": "Rio de Janeiro",
+  "area": 3000000,
+  "created_at": "2024-10-15T19:40:34.246Z",
+  "updated_at": "2024-10-15T19:40:34.246Z",
+  "address": "Av Santos Dumont, 500",
+  "cep": "12345-600",
+  "description": "Cargas nacionais"
+}
